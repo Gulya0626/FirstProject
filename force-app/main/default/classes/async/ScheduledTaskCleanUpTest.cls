@@ -31,6 +31,6 @@ private class ScheduledTaskCleanUpTest {
     // Assert
     // we are expecting all 10 tasks status become Completed
     List<Task> latestTasks = [SELECT Id FROM Task WHERE Status = 'Completed'];
-    Assert.areEqual(10, latestTasks.size());
+    Assert.areEqual(10, latestTasks.size()); 
   }
 }
