@@ -20,5 +20,12 @@ public class AccountUpdateAsync implements Queueable {
       each.Description = this.description;
     }
     update accLstToProcess;
+
+    // Right after we are done with account update
+    // we want to perform another aysnc code
+    // that need to happen right after account update
+
+    TaskAfterAccountUpdate tq = new TaskAfterAccountUpdate();
+    System.enqueueJob(tq);
   }
 }
