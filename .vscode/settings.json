@@ -5,7 +5,12 @@
     "**/.sfdx": true
   },
   "cSpell.words": [
+    "annualrevenue",
+    "datatable",
+    "Datatable",
+    "numberofemployees",
     "picklist",
-    "Picklist"
+    "Picklist",
+    "slds"
   ]
 }
