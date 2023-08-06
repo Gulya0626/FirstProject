@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Time Entry Form">
+      <div class="slds-p-around_medium">
+        <lightning-input label="Project" value={project} onchange={handleProjectChange}></lightning-input>
+        <lightning-input label="Task Description" value={taskDescription} onchange={handleTaskDescriptionChange}></lightning-input>
+        <lightning-input type="datetime-local" label="Start Time" value={startTime} onchange={handleStartTimeChange}></lightning-input>
+        <lightning-input type="datetime-local" label="End Time" value={endTime} onchange={handleEndTimeChange}></lightning-input>
+        <lightning-textarea label="Notes" value={notes} onchange={handleNotesChange}></lightning-textarea>
+        <lightning-button variant="brand" label="Submit" onclick={handleSubmit}></lightning-button>
+      </div>
+    </lightning-card>
+  </template>
+
