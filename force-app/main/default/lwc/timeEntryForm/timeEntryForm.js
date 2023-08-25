@@ -27,3 +27,5 @@ export default class TimeEntryForm extends LightningElement {
     // Logic for submitting the time entry goes here
   }
 }
+
+
